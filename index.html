@@ -1,12 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS VITE TEMPLATE</title>
+    <title>To-do list</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <div id="workspace">
+        <section id="section1">
+          <h2 class="text">Список дел:</h2>
+        </section>
+        <section id="section2">
+          <h2 class="text">Добавить новое дело</h2>
+          <form action="#">
+            <div>
+              <label for="name">* Название</label>
+              <br />
+              <input type="text" id="name" alt="Введите название" />
+            </div>
+            <div>
+              <label for="description">* Описание</label>
+              <br />
+              <input type="text" id="description" />
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
 </html>
